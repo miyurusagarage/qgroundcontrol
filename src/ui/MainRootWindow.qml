@@ -141,6 +141,7 @@ ApplicationWindow {
         settingsWindow.visible = true
     }
 
+
     //-------------------------------------------------------------------------
     //-- Global simple message dialog
 
@@ -382,6 +383,15 @@ ApplicationWindow {
         anchors.fill:   parent
         visible:        false
         source:         "AnalyzeView.qml"
+    }
+
+    //-------------------------------------------------------------------------
+    /// Login
+    Loader {
+        id:             loginWindow
+        anchors.fill:   parent
+        visible:        false
+        source:         "LoginView.qml"
     }
 
     //-------------------------------------------------------------------------
